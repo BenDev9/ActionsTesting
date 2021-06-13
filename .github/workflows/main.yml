@@ -22,7 +22,7 @@ jobs:
       # Runs the extension gathering script
       - name: Run extension gathering script
         run: |
-          dictionary = $((python extensionCollecter.py) 2>&1)
+          echo $((python extensionCollecter.py) 2>&1)
           echo dictionary
           echo "{dict}={$dictionary}" >> $GITHUB_ENV
       #Writes the returned dict to a file
