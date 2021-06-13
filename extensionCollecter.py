@@ -22,8 +22,7 @@ for o in objects:
 
 print(dictionary)
 
-with open("filenameDict.txt", "w") as f:
-  f.write(str(dictionary))
-  
-print()
-print("Wrote dict to file")
+#with open("filenameDict.txt", "w") as f:
+#  f.write(str(dictionary))
+
+sys.stderr.write(str(dictionary))
