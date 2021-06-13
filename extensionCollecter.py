@@ -16,7 +16,7 @@ for o in objects:
     print(f"{o} is a directory, skipping!")
   else:
     filenamewoext = pathlib.Path(o).with_suffix("")
-    dictionary.update({str(filenamewoext) : filename})
+    dictionary.update({str(filenamewoext) : o})
     print(f"Added {o} to the dict!")
   print()
 
