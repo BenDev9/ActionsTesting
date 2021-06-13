@@ -6,8 +6,7 @@ print(cwd)
 
 objects = os.listdir(cwd)
 
-print(f"cwd: {cwd}")
-print(f"os.path.isdir(): {os.path.isdir(cwd)}")
+dict = {}
 
 for o in objects:
   print(cwd+"/"+o)
