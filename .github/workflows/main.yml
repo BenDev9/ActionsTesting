@@ -1,0 +1,25 @@
+name: CI
+
+# Controls when the action will run. 
+on:
+  workflow_run:
+  schedule:
+  #Daily run
+  - cron: "0 0 * * *"
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE
+      - uses: actions/checkout@v2
+
+      # Runs the extension gathering script
+      - name: Run extension gathering script
+        run: python extensionCollecter.py
