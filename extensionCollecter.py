@@ -1,3 +1,7 @@
 import os
 
-print(os.getcwd())
+cwd = os.getcwd()
+
+print(cwd)
+
+print(os.listdir(cwd))
