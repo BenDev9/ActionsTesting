@@ -6,6 +6,9 @@ print(cwd)
 
 objects = os.listdir(cwd)
 
+print(f"cwd: {cwd}")
+print(f"os.isdir(): {os.isdir(cwd)}")
+
 for o in objects:
   if o == "extensionCollecter.py":
     print(o)
