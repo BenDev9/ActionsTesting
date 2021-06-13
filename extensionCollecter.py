@@ -10,6 +10,7 @@ print(f"cwd: {cwd}")
 print(f"os.path.isdir(): {os.path.isdir(cwd)}")
 
 for o in objects:
+  print(cwd+o)
   if o == "extensionCollecter.py":
     print(o)
     print("that's me")
@@ -19,3 +20,4 @@ for o in objects:
   else:
     print(o)
     print("that's a file")
+  print()
