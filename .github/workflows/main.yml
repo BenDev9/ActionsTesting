@@ -2,7 +2,6 @@ name: CI
 
 # Controls when the action will run. 
 on:
-  workflow_run:
   schedule:
   #Daily run
   - cron: "0 0 * * *"
