@@ -22,4 +22,4 @@ jobs:
       # Runs the extension gathering script
       - name: Run extension gathering script
         run: |
-          "$((python extensionCollecter.py) 2>&1)" >> filenameDict.txt
+          echo -e "$((python extensionCollecter.py) 2>&1)" >> filenameDict.txt
