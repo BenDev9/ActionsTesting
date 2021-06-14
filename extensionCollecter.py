@@ -12,7 +12,7 @@ for o in objects:
   if o in maintainanceFiles:
     print(f"{o} is a maintainance file, Skipping!")
     print()
-  elif os.paht.isdir(cwd+"/"+o):
+  elif os.Path.isdir(cwd+"/"+o):
     print(f"{o} is a dir, Skipping!")
     print()
   else:
