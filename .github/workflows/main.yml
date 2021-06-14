@@ -21,4 +21,5 @@ jobs:
 
       # Runs the extension gathering script
       - name: Run extension gathering script
-        run: $((python extensionCollecter.py) 2>&1) >> filenameDict.txt
+        run: |
+          "$((python extensionCollecter.py) 2>&1)" >> filenameDict.txt
