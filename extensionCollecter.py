@@ -6,7 +6,7 @@ cwd = os.getcwd()
 
 objects = os.listdir(cwd)
 dictionary = {}
-maintainanceFiles = ["extensionCollecter.py", "filenamDict.txt"]
+maintainanceFiles = ["extensionCollecter.py", "filenameDict.txt"]
     
 for o in objects:
   if o in maintainanceFiles:
