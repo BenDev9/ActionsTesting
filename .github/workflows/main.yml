@@ -17,9 +17,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE
       - uses: actions/checkout@v2
 
+                # echo -e "$dict" >> filenameDict.txt
+         # cat filenameDict.txt
       # Runs the extension gathering script
       - name: Run extension gathering script
-        run: |
-          dict = $((python extensionCollecter.py) 2>&1)
-          echo -e "$dict" >> filenameDict.txt
-          cat filenameDict.txt
+        run: echo $((python extensionCollecter.py) 2>&1)
+
