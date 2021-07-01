@@ -1,1 +1,1 @@
-{'test': 'test.txt', 'README': 'README.md'}
+{'README': 'README.md', 'test': 'test.txt'}
