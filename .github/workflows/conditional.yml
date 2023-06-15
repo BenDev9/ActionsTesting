@@ -1,0 +1,14 @@
+on:
+  workflow_dispatch:
+  
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set variable
+        run: foo = 1
+        
+      - name: Check condition
+        if: foo == 1
+        run: echo "Foo is 1"
+    
