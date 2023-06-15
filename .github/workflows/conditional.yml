@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Set variable
         id: set_var
-        run: echo "::set-output name=foo::$(1)"
+        run: echo "::set-output name=foo::$(0)"
         
       - name: Check condition
         if: ${{steps.set_var.outputs.foo}} == 1
