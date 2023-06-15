@@ -8,9 +8,9 @@ jobs:
     steps:
       - name: Set variable
         id: set_var
-        run: echo "::set-output name=foo::$(0)"
+        run: echo "foo=false" >> $GITHUB_OUTPUT; [ "oldSubmodulesState" == "newSubmodulesState" ] && echo "foo=true" >> $GITHUB_OUTPUT
         
       - name: Check condition
-        if: ${{steps.set_var.outputs.foo}} == 1
+        if: ${{steps.set_var.outputs.foo}} == "true"
         run: echo "Foo is 1"
     
