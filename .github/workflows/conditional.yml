@@ -1,3 +1,4 @@
+name: Test conditions
 on:
   workflow_dispatch:
   
@@ -9,6 +10,6 @@ jobs:
         run: foo = 1
         
       - name: Check condition
-        if: foo == 1
+        if: $(foo == 1)
         run: echo "Foo is 1"
     
